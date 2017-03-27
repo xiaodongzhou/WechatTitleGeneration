@@ -1,0 +1,2 @@
+# WechatTitleGeneration
+This project is to generate a wechat title given the content.  This project includes a few phases.  In Phase I, we will just implement the basic seq2seq model with RNN to generate a title.  In Phase II, we may include the attention model.  In Phase III, we may want to try to train different styles models.  So that user can choose what kind of style he/she wants the title to use. 
