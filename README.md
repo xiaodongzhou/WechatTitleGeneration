@@ -38,7 +38,9 @@ Based on percentage given, we split the X and Y correspondingly into X_train, X_
 4. Add the cost function and gradient method. 
 5. Train the model 
 
-### 
+## Test the model 
+6. Use beam search to generate a summarization sentence.  Compare the predicted title with the actual title. 
+
 
 References to Siraj's github project: How to make a text summarizer 
 -------------------------------------------------------------
