@@ -13,15 +13,32 @@ This project is divided into a few phases.
 Now, we are in Phase I, i.e., we are going to initialize the project and build the basic seq2seq model.  
 
 ## Preprocessing of the dataset. 
-* Input:  Wechat file content and title, overall word embedding file(access link) 
+* Input:  
+    1. Wechat file content and title, 
+    2. Word embedding file(access link/overall file) 
 * Output:   
     1. Vocabulary of the input： ordered by frequency desc. This is a list
     2. word2ind: position of each word in the vocabulary list.  This is a dictionary. 
     3. ind2word: word in the index of the list.  This is a dictionay.  It has be replaced by accessing the vocabulary array directly.  
-    4. 
+    4. embedding matrix: this is a N x D matrix.  We are going to shrink it to the size of the input vocabulary.  In this way, we don't need to use a lot of memory to store unrelated words for this task.  
+    5. ind2embedding: for each word in the vocabulary, find its index in the embedding matrix.  
     
-## Processing the data for the model 
+## Generate the training/test data.  
+In this step, we first build the overall feature matrix(X) and the target vector(Y).  Please note that both X and Y are composed of integer arrays.  For example, X[0] = [10, 1, 32, 8, 54, ... ], Y[0] = [10, 32, 6, ...].  Each integer represents the word in the vocabulary. 
 
+Based on percentage given, we split the X and Y correspondingly into X_train, X_test and Y_train, Y_test.  
+
+## Build the sequence to sequence model. 
+
+1. Initialize the network configuartion. 
+2. Build the encoder: RNN, n layers. 
+3. Build the decoder: RNN, n layers. 
+
+## Train the model 
+4. Add the cost function and gradient method. 
+5. Train the model 
+
+### 
 
 References to Siraj's github project: How to make a text summarizer 
 -------------------------------------------------------------
