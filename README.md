@@ -42,8 +42,8 @@ Based on percentage given, we split the X and Y correspondingly into X_train, X_
 6. Use beam search to generate a summarization sentence.  Compare the predicted title with the actual title. 
 
 
-References to Siraj's github project: How to make a text summarizer 
--------------------------------------------------------------
+# References to Siraj's github project: How to make a text summarizer 
+
 # How_to_make_a_text_summarizer
 This is the code for "How to Make a Text Summarizer - Intro to Deep Learning #10" by Siraj Raval on Youtube
 
