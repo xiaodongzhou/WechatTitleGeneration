@@ -1,3 +1,18 @@
+# Generate Wechat title from given content
+
+The objective of this project is to generate wechat title from the given content.  We use the start-of-the-art seq2seq model to build the summarizer.  This model is based on RNN and LSTM.  In the current literature, this method is much better than previous abstractive summarization methods.  To build this model, we refer to many existing methods, e.g., Google's model of text summarization with RNN, and Siraj's video and code on text summarization with deep learning. We will use collected Wechat articles(contents and titles) to train and test the model we are going to build. 
+
+## Phases  
+This project is divided into a few phases.  
+
+* Phase I:  We will use the basic seq2seq model with RNN to build the summarizer and train it with Wechat articles accumulated
+* Phase II:  We want to add the attention module into this. 
+* Phase III: We want to add more words(not only in the input vocabulary, but also in the neighborhood of the input vocabulary
+* Phase IV:  We want to classify wechat article titles into different categories.  We want to generate different styles of article title.  
+
+## Preprocessing of the dataset. 
+## 
+
 # How_to_make_a_text_summarizer
 This is the code for "How to Make a Text Summarizer - Intro to Deep Learning #10" by Siraj Raval on Youtube
 
