@@ -10,9 +10,21 @@ This project is divided into a few phases.
 * Phase III: We want to add more words(not only in the input vocabulary, but also in the neighborhood of the input vocabulary
 * Phase IV:  We want to classify wechat article titles into different categories.  We want to generate different styles of article title.  
 
-## Preprocessing of the dataset. 
-## 
+Now, we are in Phase I, i.e., we are going to initialize the project and build the basic seq2seq model.  
 
+## Preprocessing of the dataset. 
+* Input:  Wechat file content and title, overall word embedding file(access link) 
+* Output:   
+    1. Vocabulary of the input： ordered by frequency desc. This is a list
+    2. word2ind: position of each word in the vocabulary list.  This is a dictionary. 
+    3. ind2word: word in the index of the list.  This is a dictionay.  It has be replaced by accessing the vocabulary array directly.  
+    4. 
+    
+## Processing the data for the model 
+
+
+References to Siraj's github project: How to make a text summarizer 
+-------------------------------------------------------------
 # How_to_make_a_text_summarizer
 This is the code for "How to Make a Text Summarizer - Intro to Deep Learning #10" by Siraj Raval on Youtube
 
